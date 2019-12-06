@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE2FBC1F2398A9180095B2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FBC1E2398A9180095B2E9 /* AppDelegate.swift */; };
-		CE2FBC212398A9180095B2E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FBC202398A9180095B2E9 /* SceneDelegate.swift */; };
 		CE2FBC232398A9180095B2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FBC222398A9180095B2E9 /* ViewController.swift */; };
 		CE2FBC262398A9180095B2E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2FBC242398A9180095B2E9 /* Main.storyboard */; };
 		CE2FBC282398A91E0095B2E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2FBC272398A91E0095B2E9 /* Assets.xcassets */; };
 		CE2FBC2B2398A91E0095B2E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2FBC292398A91E0095B2E9 /* LaunchScreen.storyboard */; };
+		CE68CF1E2398BC9100AD1A62 /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68CF1D2398BC9100AD1A62 /* LocationInfo.swift */; };
+		CE68CF202398BD2E00AD1A62 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68CF1F2398BD2E00AD1A62 /* LocationManager.swift */; };
+		CE68CF222398D64300AD1A62 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68CF212398D64300AD1A62 /* LocationsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE2FBC1B2398A9180095B2E9 /* BGLocation1205.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGLocation1205.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2FBC1E2398A9180095B2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE2FBC202398A9180095B2E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE2FBC222398A9180095B2E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE2FBC252398A9180095B2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE2FBC272398A91E0095B2E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2FBC2A2398A91E0095B2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2FBC2C2398A91E0095B2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE68CF1D2398BC9100AD1A62 /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
+		CE68CF1F2398BD2E00AD1A62 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CE68CF212398D64300AD1A62 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,8 @@
 		CE2FBC1D2398A9180095B2E9 /* BGLocation1205 */ = {
 			isa = PBXGroup;
 			children = (
+				CE68CF1C2398BC4C00AD1A62 /* Location */,
 				CE2FBC1E2398A9180095B2E9 /* AppDelegate.swift */,
-				CE2FBC202398A9180095B2E9 /* SceneDelegate.swift */,
 				CE2FBC222398A9180095B2E9 /* ViewController.swift */,
 				CE2FBC242398A9180095B2E9 /* Main.storyboard */,
 				CE2FBC272398A91E0095B2E9 /* Assets.xcassets */,
@@ -65,6 +69,16 @@
 				CE2FBC2C2398A91E0095B2E9 /* Info.plist */,
 			);
 			path = BGLocation1205;
+			sourceTree = "<group>";
+		};
+		CE68CF1C2398BC4C00AD1A62 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				CE68CF1D2398BC9100AD1A62 /* LocationInfo.swift */,
+				CE68CF1F2398BD2E00AD1A62 /* LocationManager.swift */,
+				CE68CF212398D64300AD1A62 /* LocationsTableViewController.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +154,9 @@
 			files = (
 				CE2FBC232398A9180095B2E9 /* ViewController.swift in Sources */,
 				CE2FBC1F2398A9180095B2E9 /* AppDelegate.swift in Sources */,
-				CE2FBC212398A9180095B2E9 /* SceneDelegate.swift in Sources */,
+				CE68CF222398D64300AD1A62 /* LocationsTableViewController.swift in Sources */,
+				CE68CF202398BD2E00AD1A62 /* LocationManager.swift in Sources */,
+				CE68CF1E2398BC9100AD1A62 /* LocationInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDY29GF949;
 				INFOPLIST_FILE = BGLocation1205/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.appl.leslie.BGLocation1205;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDY29GF949;
 				INFOPLIST_FILE = BGLocation1205/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.appl.leslie.BGLocation1205;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
